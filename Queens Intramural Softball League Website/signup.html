@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="signup.css" />
+  <title>Queens Intramural Softball League</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <!-- udemy day 25 sticky nav-->
+    <div class="container">
+      <h1 class="logo"><a href=home.html>Queens Intramural Softball League</a></h1>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="teams.html">Teams</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="signup.html" class="current">Sign Up</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="text">Starting...</div>
+
+  <div class="signupForm">
+    <form class="contactform">
+      <div class="entry">
+        <label for="first">First Name: </label>
+        <input type="text" name="first" id="first" placeholder="John" required>
+      </div>
+      <div class="entry">
+        <label for="last">Last Name: </label>
+        <input type="text" name="last" id="last" placeholder="Doe" required>
+      </div>
+      <div class="entry">
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="email" placeholder="JohnDoe@email.com" required>
+      </div>
+
+      <div class="entry">
+        <label for="Team Preference">Team Preference: </label> <br>
+        <input type="radio" id="lions" name="teampref" value="lions">
+        <label for="lions">Lions</label>
+        <input type="radio" id="bluejays" name="teampref"value="bluejays">
+        <label for="bluejays">Blue Jays</label>
+        <input type="radio" id="dolphins" name="teampref"value="dolphins">
+        <label for="dolphins">Dolphins</label>
+        <input type="radio" id="pythons" name="teampref"value="pythons">
+        <label for="pythons">Pythons</label>
+
+      </div>
+
+      <div class="entry">
+        <input type="button" id="bt" value="Submit" onclick="saveFile()" />
+      </div>
+    </form>
+  </div>
+
+  <!--udemy day 30 auto text effect-->
+  <div class="speedOfText">
+    <label for="speed">Speed:</label>
+    <input type="number" name="speed" id="speed" value="1" min="1" max="10" step="1">
+  </div>
+
+
+  <script src="signup.js"></script>
+</body>
+
+</html>

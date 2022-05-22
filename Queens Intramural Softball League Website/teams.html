@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="teams.css" />
+  <title>Queens Intramural Softball League</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <!-- udemy day 25 sticky nav-->
+    <div class="container">
+      <h1 class="logo"><a href=home.html>Queens Intramural Softball League</a></h1>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="teams.html" class="current">Teams</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="navpadding"> </div>
+
+  <div>
+    <table class="teams">
+      <tr>
+        <th>Team</th>
+        <th>Home Field</th>
+        <th>Coach</th>
+        <th>Practice Times</th>
+      </tr>
+      <tr>
+        <td>
+          <img class="teamlogo" , src="teamlogos/Lions-logos_transparent.png" alt=""> <br>
+        </td>
+        <td class="homefield">Scherzer Stadium</td>
+        <td class="coach">Buck Showalter</td>
+        <td class="practice">Mondays 6pm - 8pm</td>
+      </tr>
+      <tr>
+        <td>
+          <img class="teamlogo" , src="teamlogos/blue-jays_transparent.png" alt="">
+        </td>
+        <td class="homefield">Bartolo Ball Park</td>
+        <td class="coach">Terry Collins</td>
+        <td class="practice">Tuesdays 7pm - 9pm</td>
+      </tr>
+      <tr>
+        <td>
+          <img class="teamlogo" , src="teamlogos/dolphins-logos_transparent.png" alt="">
+        </td>
+        <td class="homefield">Strawberry Field</td>
+        <td class="coach">Davey Johnson</td>
+        <td class="practice">Wednesdays 6:30pm - 8:30pm</td>
+      </tr>
+      <tr>
+        <td>
+          <img class="teamlogo" , src="teamlogos/pythons-logo_transparent.png" alt="">
+        </td>
+        <td class="homefield">Piazza Park</td>
+        <td class="coach">Bobby Valentine</td>
+        <td class="practice">Thursdays 5:30pm - 7:30pm</td>
+      </tr>
+    </table>
+  </div>
+
+  <!--my idea pop up box-->
+  <div class = "stats">
+    <button id="statsbutton">Last Season's Stats</button>
+    <div id="box" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>First Place: Blue Jays <br>
+          Second Place: Pythons <br>
+          Third Place: Lions <br>
+          Fourth Place: Dolphins <br> <br>
+          MVP: Domenick Smith <br>
+          Most Hits: Halie McNeill <br>
+          Most Homeruns: Anthony Rivera <br>
+          Most Strikeouts Pitched: Lauren Alonso <br>
+          Best ERA: Mark Lindor </h3>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="teams.js"></script>
+</body>
+
+</html>
